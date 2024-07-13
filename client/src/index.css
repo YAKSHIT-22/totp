@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #f2f2f2;
+  image-rendering: optimizeQuality;
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.bg-content1{
+  background-color: #181818;
+  border: 1px solid #252525;
+}
+
+.bg-default-100{
+  background-color: #181818;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
