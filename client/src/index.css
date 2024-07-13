@@ -41,3 +41,59 @@ body {
 ::-webkit-calendar-picker-indicator {
   filter: invert(100%);
 }
+
+
+.landing-section {
+  overflow: visible;
+  text-align: center;
+}
+
+.landing-section:before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 0%;
+  bottom: 0%;
+  width: 150%;
+  left: -25%;
+  background: url(./assets/noise.webp) repeat,
+    linear-gradient(-60deg, #049ba2 0%, #6782fb 120%);
+  background-blend-mode: overlay;
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 70%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 70%);
+}
+
+.noise {
+  z-index: -20;
+  position: absolute;
+  inset: 0;
+  background-image: url(./assets/noise.webp);
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+
+.bg-grid {
+  background-size: 45px 45px;
+  background-image: linear-gradient(to right, #2c2c2d .5px, transparent .5px),
+    linear-gradient(to bottom, #2c2c2d .5px, transparent .1px);
+  background-position: top center;
+  image-rendering: optimizeSpeed;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    0%,
+    white,
+    95%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    0%,
+    white,
+    95%,
+    transparent
+  );
+}

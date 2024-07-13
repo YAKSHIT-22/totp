@@ -15,7 +15,7 @@ const LoaderScreen = () => {
     <AnimatePresence>
       {!isStarted && (
         <motion.section
-          className='flex items-center justify-center w-full h-full absolute top-0 left-0 right-0 bottom-0 bg-white min-h-screen'
+          className='flex items-center justify-center w-full  z-10 fixed top-0 left-0 right-0 bottom-0 bg-white h-screen'
           initial="visible"
           animate="visible"
           exit="exit"
