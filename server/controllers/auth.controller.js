@@ -20,7 +20,7 @@ exports.signUp = async (req, res) => {
         });
         await auth.save();
         const otpAuthUrl = authenticator.keyuri(email, service, secret);
-        res.json({ authUrl: otpAuthUrl, otp: generateOTP(secret) });
+        res.json({ authUrl: otpAuthUrl });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

@@ -3,8 +3,6 @@ import ReactFlow, {
   Controls,
   Background,
   MiniMap,
-  Handle,
-  Position,
 } from "reactflow";
 import "reactflow/dist/style.css";
 import { edges } from "../../components/Edges";
