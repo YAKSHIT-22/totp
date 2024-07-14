@@ -8,7 +8,9 @@ const port = 4000;
 connectDatabase();
 
 app
-    .use(cors())
+    .use(cors({
+        "origin": "*",
+      }))
     .use(express.json({
         limit: "50mb"
     }))
