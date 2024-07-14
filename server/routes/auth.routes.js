@@ -3,7 +3,7 @@ const { verifyAuth, signUp, login } = require('../controllers/auth.controller');
 const router = require('express').Router();
 
 router.route("/signup")
-    .get(signUp);
+    .post(signUp);
 
 router.route("/login")
     .post(login);

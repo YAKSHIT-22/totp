@@ -2,11 +2,29 @@ import React from "react";
 import LoaderScreen from "../../components/loader/LoaderScreen";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import bot from "../../assets/bot.svg";
+import buttonData from "../../constants/componenData";
+
+const FeatureButtonsSection = () => {
+  return (
+    <div className="flex items-center justify-center w-full h-full relative mt-12">
+      {buttonData.map((button, index) => (
+        <div
+          key={index}
+          className={`absolute ${button.top} ${button.left ? button.left : ''} ${button.right ? button.right : ''} 
+          sm:${button.top} sm:${button.left ? button.left : ''} sm:${button.right ? button.right : ''}`}
+        >
+          <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
+            {button.text}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const LandingPage = () => {
   return (
-    <main className="relative w-full h-full flex items-start justify-center isolate">
+    <main className="relative w-full h-full flex items-start justify-center isolate overflow-hidden">
       <LoaderScreen />
       <section className="flex items-start justify-start landing-section flex-col w-full min-h-screen bg-grid">
         <Header />
@@ -26,33 +44,7 @@ const LandingPage = () => {
               The world’s best TOTP package, powered by Optmyzr.
             </p>
           </div>
-          <div className="flex items-center justify-center w-full h-full relative mt-12">
-            <div className="absolute top-12 left-24">
-              <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
-                User Signup
-              </div>
-            </div>
-            <div className="absolute top-32 left-96">
-              <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
-                QR Code Generation
-              </div>
-            </div>
-            <div className="absolute top-0">
-              <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
-                Authenticator Checkin
-              </div>
-            </div>
-            <div className="absolute top-40 right-96">
-              <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
-                TOTP Verification
-              </div>
-            </div>
-            <div className="absolute top-12 right-24">
-              <div className="bg-[#f2f2f2] hover:shadow-none transition-all duration-500 rounded-full py-4 px-12 text-2xl shadow-[2px_4px_0_black]">
-                User Loging In
-              </div>
-            </div>
-          </div>
+          <FeatureButtonsSection/>
         </section>
         <Footer />
       </section>

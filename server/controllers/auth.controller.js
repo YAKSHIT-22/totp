@@ -51,8 +51,8 @@ exports.verifyAuth = async (req, res) => {
         if (!auth) {
             return res.status(404).json({ message: "No user found!" });
         }
-
         const isValid = verifyOTP(auth.secret, otp);
+
         if (!isValid) {
             return res.status(400).json({ message: 'Invalid OTP' });
         }
