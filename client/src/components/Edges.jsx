@@ -46,9 +46,9 @@ export const edges = [
     },
   },
   {
-    id: "e4-6",
+    id: "e4-12",
     source: "4",
-    target: "6",
+    target: "12",
     type: "step",
     markerEnd: {
       type: MarkerType.ArrowClosed,
@@ -112,9 +112,9 @@ export const edges = [
     },
   },
   {
-    id: "e9-12",
+    id: "e9-26",
     source: "9",
-    target: "12",
+    target: "26",
     type: "step",
     markerEnd: {
       type: MarkerType.ArrowClosed,
@@ -265,4 +265,15 @@ export const edges = [
       height: 20,
     },
   },
+  {
+    id: "e21-6",
+    source: "21",
+    target: "6",
+    type: "step",
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+      width: 20,
+      height: 20,
+    },
+  }
 ];

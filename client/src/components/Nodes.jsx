@@ -44,7 +44,7 @@ export const nodes = [
         borderRadius: `3px`,
         textAlign: "center",
       },
-      position: { x: 600, y: -100 },
+      position: { x: 1200, y: -100 },
       sourcePosition:"right",
       targetPosition:"left",
     },
@@ -58,14 +58,14 @@ export const nodes = [
     {
       id: "8",
       data: { label: "Yes" },
-      position: { x: 800, y: -130 },
+      position: { x: 1400, y: -130 },
       sourcePosition:"right",
       targetPosition:"left",
     },
     {
       id: "9",
       data: { label: "No" },
-      position: { x: 800, y: -80 },
+      position: { x: 1400, y: -70 },
       sourcePosition:"right",
       targetPosition:"left",
     },
@@ -86,14 +86,14 @@ export const nodes = [
     {
       id: "12",
       data: { label: "Normal Email Based 2fa Verification" },
-      position: { x: 1000, y: -80 },
+      position: { x: 600, y: -109 },
       sourcePosition:"right",
       targetPosition:"left",
     },
     {
       id: "13",
       data: { label: "TOTP based verification starts" },
-      position: { x: 1000, y: -150 },
+      position: { x: 1600, y: -150 },
       style: {
         backgroundColor: `#049ba2`,
         color: `#fff`,
@@ -126,7 +126,7 @@ export const nodes = [
     {
       id: "16",
       data: { label: "QR Code generated for Authenticator App" },
-      position: { x: 1200, y: -150 },
+      position: { x: 1800, y: -150 },
       style: {
         backgroundColor: `#049ba2`,
         color: `#fff`,
@@ -139,7 +139,7 @@ export const nodes = [
     {
       id: "17",
       data: { label: "Email OTP Verified" },
-      position: { x: 1200, y: -71 },
+      position: { x: 800, y: -100 },
       sourcePosition:"right",
       targetPosition:"left",
     },
@@ -166,7 +166,7 @@ export const nodes = [
     {
       id: "20",
       data: { label: "Add 6 Digit OTP from Authenticator App" },
-      position: { x: 1400, y: -150 },
+      position: { x: 2000, y: -150 },
       style: {
         backgroundColor: `#049ba2`,
         color: `#fff`,
@@ -178,8 +178,8 @@ export const nodes = [
     },
     {
       id: "21",
-      data: { label: "Success" },
-      position: { x: 1400, y: -71 },
+      data: { label: "Main UI / Setting User Preferrences" },
+      position: { x: 1000, y: -109 },
       sourcePosition:"right",
       targetPosition:"left",
     },
@@ -206,7 +206,7 @@ export const nodes = [
     {
       id: "24",
       data: { label: "Success" },
-      position: { x: 1600, y:-141 },
+      position: { x: 2200, y:-141 },
       sourcePosition:"left",
       targetPosition:"left",
     },
@@ -214,6 +214,13 @@ export const nodes = [
       id: "25",
       data: { label: "Success" },
       position: { x: 1600, y:69 },
+      sourcePosition:"left",
+      targetPosition:"left",
+    },
+    {
+      id: "26",
+      data: { label: "No Change / Email Based" },
+      position: { x: 1600, y:-69 },
       sourcePosition:"left",
       targetPosition:"left",
     },
