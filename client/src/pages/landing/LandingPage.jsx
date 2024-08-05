@@ -41,7 +41,7 @@ const LandingPage = () => {
           </div>
           <div className="flex items-center justify-center gap-2 max-w-md">
             <p className="flex items-center justify-center text-3xl font-light">
-              The world’s best TOTP package, powered by Optmyzr.
+              The world’s best TOTP package, made with Love.
             </p>
           </div>
           <FeatureButtonsSection/>
