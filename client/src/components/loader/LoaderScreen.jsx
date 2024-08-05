@@ -38,7 +38,7 @@ const LoaderScreen = () => {
                 initial="hidden"
                 animate="visible"
               >
-                {'By Optmyzr'.split('').map((char, index) => (
+                {'The TOTP Package'.split('').map((char, index) => (
                   <motion.span key={index} custom={index + 7} variants={textVariants}>
                     {char}
                   </motion.span>
